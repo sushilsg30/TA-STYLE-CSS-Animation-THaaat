@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(106, 193, 164);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
