@@ -1,0 +1,46 @@
+@import "general";
+@import "reset";
+@import "vars";
+
+
+.box {
+    margin-top: 10rem;
+    height: 10rem;
+    width: 10rem;
+    background-color: $white;
+}
+
+
+.box1 {
+    background-color: rgb(43, 81, 68);
+}
+
+.box2 {
+    background-color: $blue;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes myAnimation {
+    0% {
+        background-color: rgb(115, 59, 4);
+    }
+    25% {
+        background-color: pink;
+    }
+    50%{
+        background-color: rgb(33, 33, 28);
+    }
+    75%{
+        background-color: black;
+    }
+    100%{
+        background-color: rgb(61, 61, 11);
+    }
+}
+
+
